@@ -1,0 +1,28 @@
+.header {
+  background: #ffffff;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__btn {
+    @include responsive(tablet) {
+      display: none;
+    }
+  }
+
+  .toggle-nav-btn {
+    background: transparent;
+    border: 0;
+    display: none;
+    @include responsive(tablet) {
+      display: block;
+    }
+  }
+
+  @include responsive(tablet) {
+    padding-top: 3.3rem;
+    padding-bottom: 2.7rem;
+  }
+}
